@@ -1,0 +1,89 @@
+# Oracle SQL Library Management System 📚
+
+This project is a mini-library management system built with Oracle SQL. It demonstrates fundamental concepts of relational database design, constraints, sequences, triggers, and reporting views.
+
+## 📌 Project Overview
+
+The Library Management System manages:
+
+- Authors and their books
+- Library members
+- Book loans and returns
+- Views for reporting and summaries
+
+The system includes logic for:
+- Auto-incrementing primary keys via `SEQUENCE` and `TRIGGER`
+- Referential integrity with `FOREIGN KEY` constraints
+- Realistic sample data for testing
+
+---
+
+## 🛠️ Technologies Used
+
+- **Oracle Database** (Tested on Oracle 11g)
+- SQL (DDL, DML, Views, Sequences, Triggers)
+
+---
+
+## 🧱 Database Structure
+
+### Tables
+
+| Table         | Description                          |
+|---------------|--------------------------------------|
+| `lib_authors` | Stores author details                |
+| `lib_books`   | Stores book records                  |
+| `lib_members` | Library members                      |
+| `lib_loans`   | Book loans and return tracking       |
+
+### Triggers
+
+- Auto-populate primary keys on insert using sequences
+
+### Views
+
+| View Name                 | Description                                    |
+|--------------------------|------------------------------------------------|
+| `vw_books_with_authors`  | Lists all books with corresponding authors     |
+| `vw_current_loans`       | Shows ongoing (unreturned) book loans          |
+| `vw_books_borrow_count`  | Shows how many times each book was borrowed    |
+| `vw_members_loan_summary`| Loan summary count per member                  |
+
+---
+
+## 🔄 Sample Data
+
+Includes 3 authors, 3 books, 2 members, and 3 loan records to demonstrate system behavior.
+
+---
+
+## 🚀 Getting Started
+
+1. Run the full SQL script in your Oracle environment.
+2. Explore the tables and views using `SELECT` queries.
+3. Extend the system by adding procedures or UI connections.
+
+---
+
+## 📂 Files Included
+
+- `oracle_library_project.sql` — Full database creation script
+- `README.md` — Project documentation
+
+---
+
+## 📈 Example Use Cases
+
+- University database assignments
+- Entry-level database developer portfolio
+- Demonstrating knowledge in Oracle SQL
+
+---
+
+## 👤 Author
+
+**Thet Htet Nyein**  
+📧 thet.htet.nyein9999@gmail.com  
+🔗 [LinkedIn](https://linkedin.com/in/thet-htet-nyein) | [GitHub](https://github.com/Millie99-thn)
+
+---
